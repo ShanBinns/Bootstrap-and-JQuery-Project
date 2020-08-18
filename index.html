@@ -17,13 +17,13 @@
 </head>
 
 <body>
-     <!-- navbar-expand-sm makes nav bar togglable for small to exsmall screens, also adding the button brings this forward fixed-top makes it stay and top and not move while you scroll, active class to nav items highlights that navitem when you are on that page. -->
-     <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+    <!-- NAVBAR AND ICONS navbar-expand-sm makes nav bar togglable for small to exsmall screens, also adding the button brings this forward fixed-top makes it stay and top and not move while you scroll, active class to nav items highlights that navitem when you are on that page. -->
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top"> 
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="#"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -35,14 +35,16 @@
         </div>
     </nav>
 
-    <header class="jumbotron">
+    <header class="jumbotron"> <!--jumbotron-->
         <div  class="container">
             <div  class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div  class="col-12 col-sm">
+                <!--Adding Images-->
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -54,8 +56,16 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <!--Adding Media mr margin right mt margin top-->
+                <div class="media">
+                    <img class="d-flex mr-3 img thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza"> 
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
 
@@ -75,9 +85,15 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img thumbnail align-self-center" src="img/alberto.png" alt="alberto"> 
+                    <div class="media-body">
+                        <h2>Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -87,7 +103,7 @@
             <div  class="row">             
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
-                    <ul class ="list-unstyled">    <!--Removing bullets from-->
+                    <ul class ="list-unstyled">    <!--Removing bullets from forms-->
                         <li><a href="#">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
@@ -97,13 +113,13 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br>
-		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+		                121, Clear Water Bay Road<br>
+		                Clear Water Bay, Kowloon<br>
+		                HONG KONG<br>
+		                <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br> <!--BootStrap Icons-->
+		                <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+		                <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net">confusion@food.net</a>
+		            </address>
                 </div>
                 <div class="col-12 col-sm-4">
                     <div class ="text-center">
@@ -115,19 +131,19 @@
                         <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
                     </div>
                 </div>
-           </div>
-           <div  class="row justify-content-center">             
+            </div>
+            <div  class="row justify-content-center">             
                 <div class="col-auto">
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-     <!-- We want CSS to load first and JS to load last. JS takes time to load and we don't want our users to sit and wait to see something. So they will see the CSS design first and JS comes after-->
-     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- We want CSS to load first and JS to load last. JS takes time to load and we don't want our users to sit and wait to see something. So they will see the CSS design first and JS comes after-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
